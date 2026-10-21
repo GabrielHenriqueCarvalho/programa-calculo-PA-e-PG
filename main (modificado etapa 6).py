@@ -76,7 +76,7 @@ tk.Label(frame_inputs, text="meta da soma:").grid(row=2, column=0, sticky="e", p
 entry_meta = tk.Entry(frame_inputs, width=15)
 entry_meta.grid(row=2, column=1, padx=5, pady=2)
 
-btn_calcular = tk.Button(janela, text="calcular", command=calcular, fg="white", font=("arial", 10, "bold"))
+btn_calcular = tk.Button(janela, text="calcular", command=calcular, font=("arial", 10, "bold"))
 btn_calcular.pack(pady=15)
 
 lbl_sequencia = tk.Label(janela, text="sequência: ", wraplength=300, justify="center")
