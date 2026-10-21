@@ -9,10 +9,10 @@ def calcular():
         meta = float(entry_meta.get())
         
         if tipo == 2 and r == 0 and a <= meta:
-            messagebox.showerror("erro, razão zero em PG não ultrapassará a meta.")
+            messagebox.showerror("erro", "razão zero em PG não ultrapassará a meta.")
             return
         if tipo == 1 and r <= 0 and a <= meta:
-            messagebox.showerror("erro, razão menor ou igual a zero em PA não ultrapassará a meta.")
+            messagebox.showerror("erro", "razão menor ou igual a zero em PA não ultrapassará a meta.")
             return
 
         soma = 0
@@ -24,7 +24,7 @@ def calcular():
 
         while soma <= meta:
             if qtd_termos >= max_termos:
-                messagebox.showwarning(f'erro, atingido o limite de segurança de {max_termos} termos.')
+                messagebox.showwarning("erro", (f'atingido o limite de segurança de {max_termos} termos.')
                 break
                 
             termos.append(str(a))
@@ -42,7 +42,7 @@ def calcular():
         lbl_soma.config(text=f"soma obtida: {soma:.2f}")
         
     except ValueError:
-        messagebox.showerror("erro, por favor digite valores válidos")
+        messagebox.showerror("erro", "por favor digite valores válidos")
 
 janela = tk.Tk()
 janela.title("PA e PG (M)")
