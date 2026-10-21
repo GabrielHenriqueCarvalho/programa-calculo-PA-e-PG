@@ -9,7 +9,7 @@ def calcular():
         n = int(entry_n.get())
         
         if n <= 0:
-            messagebox.showerror("erro", "a quantidade de termos deve ser maior que zero")
+            messagebox.showerror("erro, a quantidade de termos deve ser maior que zero")
             return
 
         soma = 0
@@ -27,18 +27,18 @@ def calcular():
                 a *= r
 
         lbl_sequencia.config(text="sequência: " + " → ".join(termos))
-        lbl_ultimo.config(text=f"último termo: {ultimo}")
-        lbl_soma.config(text=f"soma dos termos: {soma}")
+        lbl_ultimo.config(text=f'último termo: {ultimo}')
+        lbl_soma.config(text=f'soma dos termos: {soma}')
         
     except ValueError:
-        messagebox.showerror("erro", "por favor digite valores válidos")
+        messagebox.showerror("erro, por favor digite valores válidos")
 
 janela = tk.Tk()
 janela.title("PA e PG")
 janela.geometry("350x400")
 janela.resizable(False, False)
 
-lbl_titulo = tk.Label(janela, text="PA e PG Ali", font=("Arial", 16, "bold"))
+lbl_titulo = tk.Label(janela, text="PA e PG Ali", font=("arial", 16, "bold"))
 lbl_titulo.pack(pady=10)
 
 frame_tipo = tk.LabelFrame(janela, text=" escolha o tipo de progressão ", padx=10, pady=5)
@@ -65,16 +65,16 @@ tk.Label(frame_inputs, text="quantidade de termos:").grid(row=2, column=0, stick
 entry_n = tk.Entry(frame_inputs, width=15)
 entry_n.grid(row=2, column=1, padx=5, pady=2)
 
-btn_calcular = tk.Button(janela, text="calcular", command=calcular, fg="white", font=("Arial", 10, "bold"))
+btn_calcular = tk.Button(janela, text="calcular", command=calcular, fg="white", font=("arial", 10, "bold"))
 btn_calcular.pack(pady=15)
 
 lbl_sequencia = tk.Label(janela, text="sequência: ", wraplength=400, justify="center")
 lbl_sequencia.pack(pady=2)
 
-lbl_ultimo = tk.Label(janela, text="último termo: ", font=("Arial", 10, "bold"))
+lbl_ultimo = tk.Label(janela, text="último termo: ", font=("arial", 10, "bold"))
 lbl_ultimo.pack(pady=2)
 
-lbl_soma = tk.Label(janela, text="soma dos termos: ", font=("Arial", 10, "bold"))
+lbl_soma = tk.Label(janela, text="soma dos termos: ", font=("arial", 10, "bold"))
 lbl_soma.pack(pady=2)
 
 janela.mainloop()
