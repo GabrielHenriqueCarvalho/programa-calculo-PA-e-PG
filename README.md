@@ -18,6 +18,7 @@ Antes de iniciar a programacão, tenta lembrar:
 6. Elabore um pequeno pseudocódigo ou fluxograma representando o funcionamento do programa que você pretende construir.
 
 Etapa 2 – Construindo o programa
+
 Desenvolva um programa em Python que permita ao usuário escolher entre uma Progressão Aritmética e uma Progressão Geométrica.
 Ao iniciar, o programa deverá apresentar um menu semelhante ao seguinte:
 ========================
