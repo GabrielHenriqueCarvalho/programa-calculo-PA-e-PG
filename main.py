@@ -9,7 +9,7 @@ def calcular():
         n = int(entry_n.get())
         
         if n <= 0:
-            messagebox.showerror("erro, a quantidade de termos deve ser maior que zero")
+            messagebox.showerror("erro", "a quantidade de termos deve ser maior que zero")
             return
 
         soma = 0
@@ -31,7 +31,7 @@ def calcular():
         lbl_soma.config(text=f'soma dos termos: {soma}')
         
     except ValueError:
-        messagebox.showerror("erro, por favor digite valores válidos")
+        messagebox.showerror("erro", "por favor digite valores válidos")
 
 janela = tk.Tk()
 janela.title("PA e PG")
