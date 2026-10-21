@@ -65,7 +65,7 @@ tk.Label(frame_inputs, text="quantidade de termos:").grid(row=2, column=0, stick
 entry_n = tk.Entry(frame_inputs, width=15)
 entry_n.grid(row=2, column=1, padx=5, pady=2)
 
-btn_calcular = tk.Button(janela, text="calcular", command=calcular, fg="white", font=("arial", 10, "bold"))
+btn_calcular = tk.Button(janela, text="calcular", command=calcular, font=("arial", 10, "bold"))
 btn_calcular.pack(pady=15)
 
 lbl_sequencia = tk.Label(janela, text="sequência: ", wraplength=400, justify="center")
