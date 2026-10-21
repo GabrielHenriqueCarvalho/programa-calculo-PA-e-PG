@@ -37,7 +37,6 @@ def calcular():
             else:
                 a *= r
 
-        # Atualiza a interface com os novos resultados pedidos
         lbl_sequencia.config(text="sequência: " + " → ".join(termos[:15]) + ("..." if qtd_termos > 15 else ""))
         lbl_ultimo.config(text=f"termos necessários: {qtd_termos}")
         lbl_soma.config(text=f"soma obtida: {soma:.2f}")
